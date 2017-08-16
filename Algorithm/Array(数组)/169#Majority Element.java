@@ -7,7 +7,7 @@
     
 	解题思路：
     1.通过HashMap进行数组的全遍历。
-    2.然后通过K，取出V的值。对于重复出现的值进行+1，再进行put
+    2.然后通过K，取出V的值。对于重复出现的值进行+1，再进行put，这样就可以更新数据.
     注意：在HashMap进行get操作的时候，如果取不到数据，那么对象会抛出null pointer exception。所以最好做一次判断：
     Boolean b = myMap.get(c);
     if(b != null && b)
