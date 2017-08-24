@@ -12,11 +12,12 @@
 
 class Solution {
     public int searchInsert(int[] nums, int target) {
-        private int low = 0;
-        private int high = nums.length - 1;
-        while(low < high){
+        int low = 0;
+        int high = nums.length - 1;
+        //=：假设元素为1
+        while(low <= high){
             int mid = (low + high) / 2;
-            if(nums(mid) == target)
+            if(nums[mid] == target)
                 return mid;
             else if(nums[mid] > target)
                 high = mid - 1;
